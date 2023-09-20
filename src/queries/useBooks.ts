@@ -1,10 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
+import { BookPerPage } from 'config/book';
 import { useEffect, useState } from 'react';
 import { BooksQuery } from 'types';
 
-const fetchLocations = async (query: string): Promise<BooksQuery> => {
+const fetchLocations = async (query: string, startNum: number): Promise<BooksQuery> => {
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${query || 'google'}&maxResults=12`,
+    `https://www.googleapis.com/books/v1/volumes?q=${
+      query || 'google'
+    }&maxResults=${BookPerPage}&startIndex=${startNum}`,
   );
   return response.json();
 };
@@ -13,7 +16,7 @@ const fetchLocations = async (query: string): Promise<BooksQuery> => {
 
 const debouncing = 300; // 300ms
 
-const useBooks = (searchQuery: string) => {
+const useBooks = (searchQuery: string, startNum: number) => {
   const [searchParams, setSearchParams] = useState(searchQuery);
 
   useEffect(() => {
@@ -24,7 +27,7 @@ const useBooks = (searchQuery: string) => {
     return () => clearTimeout(timerId);
   }, [searchQuery]);
 
-  return useQuery(['books', searchParams], () => fetchLocations(searchQuery), {
+  return useQuery(['books', searchParams, startNum], () => fetchLocations(searchParams, startNum), {
     select: (response) => {
       return response;
     },
