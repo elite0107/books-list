@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { BooksState } from "../types";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { BooksState } from '../types';
 
 // Define the initial state using that type
 const initialState: BooksState = {
@@ -7,7 +7,7 @@ const initialState: BooksState = {
 };
 
 export const booksSlice = createSlice({
-  name: "books",
+  name: 'books',
   initialState,
   reducers: {
     increment: (state) => {
