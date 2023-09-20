@@ -3,7 +3,7 @@ import { Header } from './header';
 
 export const Container: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className='flex flex-col bg-white dark:bg-gray-900 min-h-screen'>
+    <div className='flex flex-col bg-white dark:bg-gray-900 min-h-screen pb-10'>
       <Header />
       {children}
     </div>

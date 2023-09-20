@@ -11,6 +11,7 @@ const fetchLocations = async (query: string, startNum: number): Promise<BooksQue
   );
 
   localStorage.setItem('search-query', query);
+  localStorage.setItem('page-start-number', startNum.toString());
 
   return response.json();
 };
