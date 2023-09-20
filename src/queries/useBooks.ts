@@ -4,7 +4,7 @@ import { BooksQuery } from 'types';
 
 const fetchLocations = async (query: string): Promise<BooksQuery> => {
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${query || 'google'}`,
+    `https://www.googleapis.com/books/v1/volumes?q=${query || 'google'}&maxResults=12`,
   );
   return response.json();
 };
@@ -29,6 +29,7 @@ const useBooks = (searchQuery: string) => {
       return response;
     },
     keepPreviousData: true,
+    refetchOnWindowFocus: false,
   });
 };
 

@@ -11,8 +11,6 @@ const HomePage = () => {
   const dispatch = useAppDispatch();
   const { data, isLoading, isError } = useBooks(searchQuery);
 
-  console.log(data, isLoading, isError);
-
   const setSearchQueryCallback = useCallback(
     (query: string) => {
       dispatch(setSearchQuery(query));
@@ -22,15 +20,15 @@ const HomePage = () => {
 
   const bookList = useMemo(() => {
     return (
-      <div className='flex flex-wrap'>
-        {data?.items.map((book) => <BookCard key={book.id} book={book} />)}
+      <div className='flex flex-wrap justify-center gap-4 max-w-7xl'>
+        {data?.items?.map((book) => <BookCard key={book.id} book={book} />)}
       </div>
     );
   }, [data]);
 
   return (
     <Layout loading={isLoading} error={isError}>
-      <div className='flex flex-col bg-gray-200 p-4 items-center gap-8'>
+      <div className='flex flex-col p-4 items-center gap-8'>
         <SearchBox value={searchQuery} setValue={setSearchQueryCallback} />
         {bookList}
       </div>

@@ -1,6 +1,6 @@
 export interface Book {
   id: string;
-  volumnInfo: {
+  volumeInfo: {
     title: string;
     authors: string[];
     imageLinks: {
@@ -19,5 +19,5 @@ export interface BooksState {
 
 export interface BooksQuery {
   totalItems: number;
-  items: Book[];
+  items?: Book[];
 }
