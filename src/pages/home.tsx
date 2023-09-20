@@ -1,5 +1,15 @@
-const Home = () => {
-  return <div className='w-screen h-screen flex items-center justify-center'>Home Page</div>;
+import { SearchBox } from 'components/base/searchBox';
+import { Layout } from '../components/layout';
+
+const HomePage = () => {
+  return (
+    <Layout loading={false} error={false}>
+      <div className='flex flex-col bg-gray-200 p-4 items-center gap-8'>
+        <SearchBox />
+        <div className='flex flex-wrap'></div>
+      </div>
+    </Layout>
+  );
 };
 
-export default Home;
+export default HomePage;
