@@ -1,18 +1,42 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
+import { ErrorBoundary } from 'react-error-boundary';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+const HomePage = React.lazy(() => import('./pages/home'));
+const BooksPage = React.lazy(() => import('./pages/books/books'));
+
+const Loading = React.lazy(() => import('./pages/loading/loading'));
+const PageError = React.lazy(() => import('./pages/error/500'));
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className='App'>
-        <header className='App-header'>
-          <h1 className='flex items-center justify-center w-screen h-screen text-3xl font-bold underline text-red-600'>
-            Simple React Typescript Tailwind Sample
-          </h1>
-        </header>
-      </div>
-    </Provider>
+    <ErrorBoundary FallbackComponent={PageError} onReset={() => window.location.replace('/')}>
+      <BrowserRouter>
+        <Provider store={store}>
+          <Routes>
+            <Route
+              path='/'
+              element={
+                <Suspense fallback={<Loading />}>
+                  <HomePage />
+                </Suspense>
+              }
+            />
+            <Route
+              path='/books/:book_id'
+              element={
+                <Suspense fallback={<Loading />}>
+                  <BooksPage />
+                </Suspense>
+              }
+            />
+            <Route path='*' element={<Navigate to='/' />} />
+          </Routes>
+        </Provider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 
