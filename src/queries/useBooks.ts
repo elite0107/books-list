@@ -9,6 +9,9 @@ const fetchLocations = async (query: string, startNum: number): Promise<BooksQue
       query || 'google'
     }&maxResults=${BookPerPage}&startIndex=${startNum}`,
   );
+
+  localStorage.setItem('search-query', query);
+
   return response.json();
 };
 
@@ -17,17 +20,17 @@ const fetchLocations = async (query: string, startNum: number): Promise<BooksQue
 const debouncing = 300; // 300ms
 
 const useBooks = (searchQuery: string, startNum: number) => {
-  const [searchParams, setSearchParams] = useState(searchQuery);
+  const [searchParams, setSearchParams] = useState(`${searchQuery}:${startNum}`);
 
   useEffect(() => {
     const timerId = setTimeout(() => {
-      setSearchParams(searchQuery);
+      setSearchParams(`${searchQuery}:${startNum}`);
     }, debouncing);
 
     return () => clearTimeout(timerId);
-  }, [searchQuery]);
+  }, [searchQuery, startNum]);
 
-  return useQuery(['books', searchParams, startNum], () => fetchLocations(searchParams, startNum), {
+  return useQuery(['books', searchParams], () => fetchLocations(searchQuery, startNum), {
     select: (response) => {
       return response;
     },

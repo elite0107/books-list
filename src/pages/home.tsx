@@ -12,7 +12,7 @@ const HomePage = () => {
   const searchQuery = useAppSelector((state) => state.searchQuery.query);
   const dispatch = useAppDispatch();
   const [startNum, setStartNum] = useState(0);
-  const { data, isLoading, isError } = useBooks(searchQuery, startNum);
+  const { data, isLoading, isError, isPreviousData } = useBooks(searchQuery, startNum);
 
   const setSearchQueryCallback = useCallback(
     (query: string) => {
@@ -35,18 +35,18 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Layout loading={isLoading} error={isError}>
-      <div className='flex flex-col p-4 items-center gap-8 max-w-7xl mx-auto'>
-        <SearchBox value={searchQuery} setValue={setSearchQueryCallback} />
-        <Pagination
-          startIndex={startNum}
-          count={BookPerPage}
-          totalNumber={data?.totalItems ?? 0}
-          onPaginate={onPaginate}
-        />
+    <div className='flex flex-col p-4 items-center gap-8'>
+      <SearchBox value={searchQuery} setValue={setSearchQueryCallback} />
+      <Pagination
+        startIndex={startNum}
+        count={BookPerPage}
+        totalNumber={data?.totalItems ?? 0}
+        onPaginate={onPaginate}
+      />
+      <Layout loading={isLoading || isPreviousData} error={isError}>
         {bookList}
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 

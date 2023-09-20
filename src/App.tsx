@@ -5,6 +5,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ColorModeProvider from 'contexts/colorModeProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Container } from 'components/layout/container';
 
 const HomePage = lazy(() => import('./pages/home'));
 const BooksPage = lazy(() => import('./pages/books/books'));
@@ -18,29 +19,31 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ErrorBoundary FallbackComponent={PageError} onReset={() => window.location.replace('/')}>
         <ColorModeProvider>
-          <BrowserRouter>
-            <Provider store={store}>
-              <Routes>
-                <Route
-                  path='/'
-                  element={
-                    <Suspense fallback={<Loading />}>
-                      <HomePage />
-                    </Suspense>
-                  }
-                />
-                <Route
-                  path='/books/:book_id'
-                  element={
-                    <Suspense fallback={<Loading />}>
-                      <BooksPage />
-                    </Suspense>
-                  }
-                />
-                <Route path='*' element={<Navigate to='/' />} />
-              </Routes>
-            </Provider>
-          </BrowserRouter>
+          <Container>
+            <BrowserRouter>
+              <Provider store={store}>
+                <Routes>
+                  <Route
+                    path='/'
+                    element={
+                      <Suspense fallback={<Loading />}>
+                        <HomePage />
+                      </Suspense>
+                    }
+                  />
+                  <Route
+                    path='/books/:book_id'
+                    element={
+                      <Suspense fallback={<Loading />}>
+                        <BooksPage />
+                      </Suspense>
+                    }
+                  />
+                  <Route path='*' element={<Navigate to='/' />} />
+                </Routes>
+              </Provider>
+            </BrowserRouter>
+          </Container>
         </ColorModeProvider>
       </ErrorBoundary>
     </QueryClientProvider>

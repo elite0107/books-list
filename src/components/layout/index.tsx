@@ -1,7 +1,6 @@
 import { PropsWithChildren } from 'react';
 import { Loading } from '../base/loading';
 import { PageError } from '../base/pageError';
-import { Header } from './header';
 
 export const Layout: React.FC<PropsWithChildren & { loading: boolean; error: boolean }> = ({
   children,
@@ -16,10 +15,5 @@ export const Layout: React.FC<PropsWithChildren & { loading: boolean; error: boo
     return <PageError />;
   }
 
-  return (
-    <div className='flex flex-col bg-white dark:bg-gray-900 min-h-screen'>
-      <Header />
-      {children}
-    </div>
-  );
+  return <div className='max-w-7xl'>{children}</div>;
 };

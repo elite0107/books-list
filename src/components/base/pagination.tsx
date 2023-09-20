@@ -9,12 +9,18 @@ export const Pagination = ({ startIndex, count, totalNumber, onPaginate }: Pagin
   return (
     <div className='flex flex-col items-center'>
       <span className='text-sm text-gray-700 dark:text-gray-400'>
-        Showing{' '}
-        <span className='font-semibold text-gray-900 dark:text-white'>{startIndex + 1}</span> to{' '}
-        <span className='font-semibold text-gray-900 dark:text-white'>
-          {Math.min(startIndex + count, totalNumber)}
-        </span>{' '}
-        of <span className='font-semibold text-gray-900 dark:text-white'>{totalNumber}</span> Books
+        {!!totalNumber && (
+          <>
+            Showing{' '}
+            <span className='font-semibold text-gray-900 dark:text-white'>{startIndex + 1}</span> to{' '}
+            <span className='font-semibold text-gray-900 dark:text-white'>
+              {Math.min(startIndex + count, totalNumber)}
+            </span>{' '}
+            of <span className='font-semibold text-gray-900 dark:text-white'>{totalNumber}</span>{' '}
+            Books
+          </>
+        )}
+        {!totalNumber && <>Loading ...</>}
       </span>
       <div className='inline-flex mt-2 xs:mt-0'>
         <button

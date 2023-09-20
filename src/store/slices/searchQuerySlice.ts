@@ -3,7 +3,7 @@ import { SearchQueryState } from 'types/searchQuery';
 
 // Define the initial state using that type
 const initialState: SearchQueryState = {
-  query: '',
+  query: localStorage.getItem('search-query') ?? '',
 };
 
 export const searchQuerySlice = createSlice({

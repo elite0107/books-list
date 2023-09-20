@@ -1,6 +1,6 @@
 export const Loading = () => {
   return (
-    <div className='bg-white dark:bg-gray-900 h-screen w-screen flex items-center justify-center'>
+    <div className='bg-white dark:bg-gray-900 pt-48 h-screen mx-auto'>
       <svg
         aria-hidden='true'
         className='w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600'
