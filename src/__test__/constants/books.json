@@ -1,0 +1,924 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 3079,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "NSNZAAAAYAAJ",
+      "etag": "3bYwIwlxbu4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NSNZAAAAYAAJ",
+      "volumeInfo": {
+        "title": "AppleTalk Network Services",
+        "authors": ["Dorian J. Cougias", "Tom Dell", "E. L. Heiberger"],
+        "publisher": "Academic Press",
+        "publishedDate": "1996",
+        "description": "Discussing the software related issues necessary to design an effective network, this book suggests the best third party solutions and shows how to implement them. It also takes on software issues such as backup, printing, gateways, creation of Internet services, file sharing and scheduling. A CD-ROM is included with the text.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000031397186"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 510,
+        "printType": "BOOK",
+        "categories": ["AppleTalk"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NSNZAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NSNZAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=NSNZAAAAYAAJ&q=main+window&dq=main+window&hl=&cd=61&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=NSNZAAAAYAAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/AppleTalk_Network_Services.html?hl=&id=NSNZAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NSNZAAAAYAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>main window</b> , 318 running remotely , 311 Timeout counter , 319 aliases , 326 allow and deny , 325-326 basics , 308-317 browser interaction with , 236 Butler SQL integration , 235 defined , 303 file access with , 309 firewalls and , 323&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "aAM6BQAAQBAJ",
+      "etag": "xVMUnMEgN/g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aAM6BQAAQBAJ",
+      "volumeInfo": {
+        "title": "Simulation of Urban Mobility",
+        "subtitle": "First International Conference, SUMO 2013, Berlin, Germany, May 15-17, 2013. Revised Selected Papers",
+        "authors": ["Michael Behrisch", "Daniel Krajzewicz", "Melanie Weber"],
+        "publisher": "Springer",
+        "publishedDate": "2014-11-06",
+        "description": "This book constitutes the thoroughly refereed proceedings of the First International Conference on Simulation of Urban Mobility, SUMO 2013, held in Berlin, Germany, in May 2013. The 12 revised full papers presented tin this book were carefully selected and reviewed from 22 submissions. The papers are organized in two topical sections: models and technical innovations and applications and surveys.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783662450796"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3662450798"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 175,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aAM6BQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aAM6BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=aAM6BQAAQBAJ&pg=PA77&dq=main+window&hl=&cd=62&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=aAM6BQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=aAM6BQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 187.02,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 130.91,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=aAM6BQAAQBAJ&rdid=book-aAM6BQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 187020000,
+              "currencyCode": "PLN"
+            },
+            "retailPrice": {
+              "amountInMicros": 130910000,
+              "currencyCode": "PLN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Simulation_of_Urban_Mobility-sample-epub.acsm?id=aAM6BQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Simulation_of_Urban_Mobility-sample-pdf.acsm?id=aAM6BQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=aAM6BQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>main</b> demand instance holding all other demand components together. • Vehicles.py: Vehicles structure and methods ... <b>window</b> consist of three <b>main</b> elements: an object browser; the network/ results viewer and a command line interface (CLI)&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GTS3BAAAQBAJ",
+      "etag": "X2UBf3QwYsM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GTS3BAAAQBAJ",
+      "volumeInfo": {
+        "title": "Distributed User Interfaces: Usability and Collaboration",
+        "authors": [
+          "María D. Lozano",
+          "Jose A. Gallud",
+          "Ricardo Tesoriero",
+          "Victor M.R. Penichet"
+        ],
+        "publisher": "Springer Science & Business Media",
+        "publishedDate": "2013-10-17",
+        "description": "Written by international researchers in the field of Distributed User Interfaces (DUIs), this book brings together important contributions regarding collaboration and usability in Distributed User Interface settings. Throughout the thirteen chapters authors address key questions concerning how collaboration can be improved by using DUIs, including: in which situations a DUI is suitable to ease the collaboration among users; how usability standards can be used to evaluate the usability of systems based on DUIs; and accurately describe case studies and prototypes implementing these concerns. Under a collaborative scenario, users sharing common goals may take advantage of DUI environments to carry out their tasks more successfully because DUIs provide a shared environment where the users are allowed to manipulate information in the same space and at the same time. Under this hypothesis, collaborative DUI scenarios open new challenges to usability evaluation techniques and methods. Distributed User Interfaces: Collaboration and Usability presents an integrated view of different approaches related to Collaboration and Usability in Distributed User Interface settings, which demonstrate the state of the art, as well as future directions in this novel and rapidly evolving subject area.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781447154990"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1447154991"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 163,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.8.7.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GTS3BAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GTS3BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=GTS3BAAAQBAJ&pg=PA6&dq=main+window&hl=&cd=63&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=GTS3BAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=GTS3BAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 233.79,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 163.65,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=GTS3BAAAQBAJ&rdid=book-GTS3BAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 233790000,
+              "currencyCode": "PLN"
+            },
+            "retailPrice": {
+              "amountInMicros": 163650000,
+              "currencyCode": "PLN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Distributed_User_Interfaces_Usability_an-sample-epub.acsm?id=GTS3BAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Distributed_User_Interfaces_Usability_an-sample-pdf.acsm?id=GTS3BAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GTS3BAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>main window</b> and another IS2 that corresponds to the tool window. We can consider that IS2 depends on IS1 because if we close IS1, IS2alsocloses, but not vice versa. Since the Hosting relationship establishes the possibility that an IO&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZUSXBAAAQBAJ",
+      "etag": "s8TS6wRBXtY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZUSXBAAAQBAJ",
+      "volumeInfo": {
+        "title": "Microsoft Exchange Server 2010 Administrator's Pocket Consultant",
+        "authors": ["William Stanek"],
+        "publisher": "Microsoft Press",
+        "publishedDate": "2009-11-04",
+        "description": "Portable and precise, this pocket-sized guide delivers immediate answers for the day-to-day administration of Exchange Server 2010. Zero in on core support and maintenance tasks using quick-reference tables, instructions, and lists. You’ll get the focused information you need to solve problems and get the job done—whether you’re at your desk or in the field! Get fast facts to: Configure and manage Exchange clients Set up users, contacts, distribution lists, and address books Administer permissions, rules, policies, and security settings Manage databases and storage groups Optimize message processing, logging, and anti-spam filtering Administer at the command line using Exchange Management Shell Configure SMTP, connectors, links, and Edge subscriptions Manage mobile device features and client access Back up and restore systems",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780735642782"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0735642788"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 1089,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.6.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZUSXBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZUSXBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=ZUSXBAAAQBAJ&pg=PT102&dq=main+window&hl=&cd=64&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=ZUSXBAAAQBAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Microsoft_Exchange_Server_2010_Administr.html?hl=&id=ZUSXBAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZUSXBAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... Windows Remote Management service. The server name you enter sets the URL that the Exchange Management Console will use ... <b>main window</b> for the Exchange Management Console. In the Exchange Management Console, the forestlevel node is the&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OvMCAAAAYAAJ",
+      "etag": "lm+lrV/HRuM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OvMCAAAAYAAJ",
+      "volumeInfo": {
+        "title": "Caron's Directory of the City of Louisville",
+        "publishedDate": "1903",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "HARVARD:HN4HE6"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 2000,
+        "printType": "BOOK",
+        "categories": ["Louisville (Ky.)"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.5.5.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OvMCAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OvMCAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=OvMCAAAAYAAJ&pg=PA1936&dq=main+window&hl=&cd=65&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=OvMCAAAAYAAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Caron_s_Directory_of_the_City_of_Louisvi.html?hl=&id=OvMCAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OvMCAAAAYAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "VQVTAAAAMAAJ",
+      "etag": "pZsbpdMjqGs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/VQVTAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Transportation Research Record",
+        "publishedDate": "1993",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015028260886"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 860,
+        "printType": "BOOK",
+        "categories": ["Air travel"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=VQVTAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=VQVTAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=VQVTAAAAMAAJ&q=main+window&dq=main+window&hl=&cd=66&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=VQVTAAAAMAAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Transportation_Research_Record.html?hl=&id=VQVTAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=VQVTAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... window itself . Windows employs a mouse that allows the user to point to any portion of the screen directly . Each ... <b>main screen</b> displays the prototype suggestions such as remove , act , call police , and so on . WINDOWS ENVIRONMENT&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "il5VAAAAMAAJ",
+      "etag": "Sj8/fOb/Hgo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/il5VAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Dr. Dobb's Journal",
+        "subtitle": "Software Tools for the Professional Programmer",
+        "publishedDate": "2000",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015048216454"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 914,
+        "printType": "BOOK",
+        "categories": ["Microcomputers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.4.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=il5VAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=il5VAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=il5VAAAAMAAJ&q=main+window&dq=main+window&hl=&cd=67&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=il5VAAAAMAAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Dr_Dobb_s_Journal.html?hl=&id=il5VAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=il5VAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>Main</b>- <b>Window</b> , Wm ( window manager ) , and Im- age , have their own constructor , class , and instance methods . However , many of the classes are interdependent , and objects can be created to handle special events . The main user&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QqHcAwAAQBAJ",
+      "etag": "nyHH5agU7Uc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QqHcAwAAQBAJ",
+      "volumeInfo": {
+        "title": "The MIDI Manual",
+        "subtitle": "A Practical Guide to MIDI in the Project Studio",
+        "authors": ["David Miles Huber"],
+        "publisher": "CRC Press",
+        "publishedDate": "2012-08-21",
+        "description": "The MIDI Manual is a complete reference on MIDI, written by a well-respected sound engineer and author. This best-selling guide provides a clear explanation of what MIDI is, how to use electronic instruments and an explanation of sequencers and how to use them. You will learn how to set up an efficient MIDI system and how to get the best out of your music. The MIDI Manual is packed full of useful tips and practical examples on sequencing and mixing techniques. It also covers editors/librarians, working with a score, MIDI in mass media and multimedia and synchronisation. The MIDI spec is set out in detail along with the helpful guidelines on using the implementation chart. Illustrated throughout with helpful photos and screengrabs, this is the most readable and clear book on MIDI available.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781136119187"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1136119183"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 379,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QqHcAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QqHcAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=QqHcAwAAQBAJ&pg=PA114&dq=main+window&hl=&cd=68&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=QqHcAwAAQBAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_MIDI_Manual.html?hl=&id=QqHcAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/The_MIDI_Manual-sample-pdf.acsm?id=QqHcAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QqHcAwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>window</b> is used to display such information Inc.; www.digidesign.com.) as track-related data, track names, MIDI port assignments for each. Figure 5.10. ProTools showing the <b>main</b> edit <b>screen</b>. (Courtesy of Digidesign, A ... <b>Main</b> Edit <b>Screen</b>."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "2FfAAgAAQBAJ",
+      "etag": "llmhP1VVGCw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/2FfAAgAAQBAJ",
+      "volumeInfo": {
+        "title": "IBM i 6.1 Technical Overview",
+        "authors": [
+          "Jim Cook",
+          "Ahmed Mansour",
+          "Giancarlo Omati",
+          "Ana Flavia Pavan",
+          "Mark Roy",
+          "IBM Redbooks"
+        ],
+        "publisher": "IBM Redbooks",
+        "publishedDate": "2009-12-16",
+        "description": "This IBM® Redbooks® publication introduces a technical overview of the main new features, functions and enhancements available in IBM i 6.1 (formerly called i5/OS® V6R1). It gives a summary and brief explanation of new capabilities and what has changed in the operating system, and also discusses many of the licensed programs and application development tools associated with IBM i. Many other new and enhanced functions are described, such as virtualization of storage, security, JavaTM performance, improved performance with IBM System StorageTM devices, backup and recovery, including base IBM i, Backup, Recovery and Media Services (BRMS). The book introduces the PowerHATM product, IBM Systems Director-based system management and an easier Web enablement. The information provided in this book will be useful for customers, Business Partners, and IBM service professionals involved with planning, supporting, upgrading, and implementing IBM i 6.1 solutions.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780738433608"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0738433608"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 518,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "averageRating": 1,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=2FfAAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=2FfAAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=2FfAAgAAQBAJ&pg=PA140&dq=main+window&hl=&cd=69&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=2FfAAgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=2FfAAgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 0,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 0,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=2FfAAgAAQBAJ&rdid=book-2FfAAgAAQBAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=2FfAAgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>main window</b> and in the Data Viewer are now dockable (can move them to wherever you want). Install. The following topics describe installation changes: Added check in the install up front for system value QALWOBJRST. Add/Remove programs&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "eLVJCgAAQBAJ",
+      "etag": "eJMuYvJ1upw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eLVJCgAAQBAJ",
+      "volumeInfo": {
+        "title": "Programming Microsoft Dynamics™ NAV 2015",
+        "authors": ["David Studebaker", "Christopher Studebaker"],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2015-07-30",
+        "description": "NAV 2015 is a complete ERP system, which also contains a robust set of development tools to support customization and enhancement. These include an object designer for each of seven application object types, a business application-oriented programming language with .NET interface capability, a compiler, a debugger, and programming testing language support. This book is designed to take you from an introduction to the product and its integrated development tools to being a productive developer in the NAV 2015 environment. It will serve as a comprehensive reference guide, complementing NAV's Help files. You will find this book really useful if you want to evaluate the product's development capabilities or need to manage NAV 2015 based projects. Additionally, you will also learn about the NAV application structure, the C/SIDE development environment, the C/AL language, the construction and uses of each object type, and how it all fits together.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781784391553"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1784391557"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 644,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eLVJCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eLVJCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=eLVJCgAAQBAJ&pg=PA555&dq=main+window&hl=&cd=70&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=eLVJCgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=eLVJCgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 187.02,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 130.91,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=eLVJCgAAQBAJ&rdid=book-eLVJCgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 187020000,
+              "currencyCode": "PLN"
+            },
+            "retailPrice": {
+              "amountInMicros": 130910000,
+              "currencyCode": "PLN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=eLVJCgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... window, rightclick to select View Code or double-click on the form image in the <b>main window</b>. Once we are viewing the code, we should make it look like the following: using using using using using using using System.Threading.Tasks&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "zApAAQAAIAAJ",
+      "etag": "iBA7Pm4Jdtg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zApAAQAAIAAJ",
+      "volumeInfo": {
+        "title": "PC Magazine",
+        "subtitle": "The Independent Guide to IBM-standard Personal Computing",
+        "publishedDate": "2005",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCSD:31822032890063"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 808,
+        "printType": "BOOK",
+        "categories": ["IBM microcomputers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.7.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zApAAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zApAAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=zApAAQAAIAAJ&q=main+window&dq=main+window&hl=&cd=71&source=gbs_api",
+        "infoLink": "http://books.google.pl/books?id=zApAAQAAIAAJ&dq=main+window&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/PC_Magazine.html?hl=&id=zApAAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zApAAQAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>WINDOWS</b> 3.0 CONTROL PANEL Color <b>Window</b> Text Color Palette <b>WINDOWS</b> 95 Tapping the Power of the <b>Windows</b> 95 Shell. line to include the name of your .BMP file or run the Desktop section of the Control Panel . If your .BMP file is in the <b>main</b>&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "L6PxBQAAQBAJ",
+      "etag": "e+kJaVWqbLc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/L6PxBQAAQBAJ",
+      "volumeInfo": {
+        "title": "Modeling and Simulation of Computer Networks and Systems",
+        "subtitle": "Methodologies and Applications",
+        "authors": ["Mohammad S. Obaidat", "Faouzi Zarai", "Petros Nicopolitidis"],
+        "publisher": "Morgan Kaufmann",
+        "publishedDate": "2015-04-21",
+        "description": "Modeling and Simulation of Computer Networks and Systems: Methodologies and Applications introduces you to a broad array of modeling and simulation issues related to computer networks and systems. It focuses on the theories, tools, applications and uses of modeling and simulation in order to effectively optimize networks. It describes methodologies for modeling and simulation of new generations of wireless and mobiles networks and cloud and grid computing systems. Drawing upon years of practical experience and using numerous examples and illustrative applications recognized experts in both academia and industry, discuss: Important and emerging topics in computer networks and systems including but not limited to; modeling, simulation, analysis and security of wireless and mobiles networks especially as they relate to next generation wireless networks Methodologies, strategies and tools, and strategies needed to build computer networks and systems modeling and simulation from the bottom up Different network performance metrics including, mobility, congestion, quality of service, security and more... Modeling and Simulation of Computer Networks and Systems is a must have resource for network architects, engineers and researchers who want to gain insight into optimizing network performance through the use of modeling and simulation. Discusses important and emerging topics in computer networks and Systems including but not limited to; modeling, simulation, analysis and security of wireless and mobiles networks especially as they relate to next generation wireless networks Provides the necessary methodologies, strategies and tools needed to build computer networks and systems modeling and simulation from the bottom up Includes comprehensive review and evaluation of simulation tools and methodologies and different network performance metrics including mobility, congestion, quality of service, security and more",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780128011584"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0128011580"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 964,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=L6PxBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=L6PxBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.pl/books?id=L6PxBQAAQBAJ&pg=PA513&dq=main+window&hl=&cd=72&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=L6PxBQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=L6PxBQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 554.31,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 388.02,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=L6PxBQAAQBAJ&rdid=book-L6PxBQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 554310000,
+              "currencyCode": "PLN"
+            },
+            "retailPrice": {
+              "amountInMicros": 388020000,
+              "currencyCode": "PLN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Modeling_and_Simulation_of_Computer_Netw-sample-epub.acsm?id=L6PxBQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Modeling_and_Simulation_of_Computer_Netw-sample-pdf.acsm?id=L6PxBQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=L6PxBQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... main modules: The main graphic user interface (GUI) that allows the user to FIGURE 18.3 PowerDEVS <b>Main Window</b>. describe DEVS models in a 2 Background and tools 513 2.2.2 QSS and delay differential equations 2.3 PowerDEVS."
+      }
+    }
+  ]
+}
