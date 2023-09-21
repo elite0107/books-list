@@ -22,7 +22,7 @@ const BookPage = () => {
   }, [data, dispatch, isError, isLoading]);
 
   return (
-    <div className='flex flex-col p-4 gap-8 w-auto sm:w-[48rem] mx-auto'>
+    <div className='flex flex-col p-4 gap-8 w-auto md:w-[48rem] mx-auto'>
       <Link
         to='/'
         className='inline-flex items-center cursor-pointer mr-auto gap-2 mt-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
@@ -38,7 +38,7 @@ const BookPage = () => {
                 <img
                   src={book?.volumeInfo.imageLinks.smallThumbnail}
                   alt='thumbnail'
-                  className='rounded-lg object-contain'
+                  className='rounded-lg h-full'
                 />
               )}
               {!book?.volumeInfo.imageLinks && (
