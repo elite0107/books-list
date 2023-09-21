@@ -9,7 +9,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://localhost:3000/books-list',
+    baseUrl: 'https://elite0107.github.io/books-list',
     specPattern: 'cypress/tests/**/*.spec.{js,jsx,ts,tsx}',
   },
 });
