@@ -41,13 +41,14 @@ jobs:
     - name: Create SSH Key
       run: |
         echo "${SSH_PRIVATE_KEY}" > private.key
+        echo "Deploy private key ${SSH_PRIVATE_KEY}"
         sudo chmod 400 private.key
       env:
         SSH_PRIVATE_KEY: $ {{ secrets.SSH_DEPLOY_KEY }}
 
     - name: Install SSH Key
       run: |
-        eval "ssh-agent -s"
+        eval $(ssh-agent -s)
         ssh-add private.key
 
     - name: Deploy
