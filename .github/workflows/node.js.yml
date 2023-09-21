@@ -29,11 +29,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
 
-    - name: Install dependencies
-      run: yarn
-
     - name: Build
-      run: yarn build --if-present
+      run: |
+        yarn
+        yarn build
       env:
         REACT_APP_GOOGLE_BOOK_API_BASE_URL: ${{ secrets.REACT_APP_GOOGLE_BOOK_API_BASE_URL }}
         REACT_APP_USER_KEY: ${{ secrets.REACT_APP_USER_KEY }}
