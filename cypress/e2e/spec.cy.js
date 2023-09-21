@@ -1,8 +1,10 @@
 /* eslint-disable no-undef */
 describe('template spec', () => {
-  it('check theme switcher', () => {
-    cy.visit('https://elite0107.github.io/books-list');
+  before(() => {
+    cy.visit('/');
+  });
 
+  it('check theme switcher', () => {
     cy.get('[data-testid=search]').type('wonderful');
   });
 });
