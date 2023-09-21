@@ -20,16 +20,22 @@ export const BookCard = ({ book }: { book: Book }) => {
             src={book.volumeInfo.imageLinks.smallThumbnail}
             alt='thumbnail'
             className='h-full rounded-lg'
+            data-testid='thumbnail'
           />
         )}
         {!book.volumeInfo.imageLinks && (
-          <div className='text-black dark:text-gray-200'>No Thumbnail</div>
+          <div className='text-black dark:text-gray-200' data-testid='no-thumbnail'>
+            No Thumbnail
+          </div>
         )}
       </div>
-      <h5 className='font-bold tracking-tight text-gray-900 dark:text-white'>
+      <h5
+        className='font-bold tracking-tight text-gray-900 dark:text-white'
+        data-testid='book-title'
+      >
         {book.volumeInfo.title}
       </h5>
-      <p className='font-normal text-gray-700 dark:text-gray-400 mb-2'>
+      <p className='font-normal text-gray-700 dark:text-gray-400 mb-2' data-testid='book-author'>
         {book.volumeInfo.authors && book.volumeInfo.authors.length > 0
           ? book.volumeInfo.authors[0]
           : ''}
