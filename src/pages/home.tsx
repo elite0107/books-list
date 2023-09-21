@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo } from 'react';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { setPageStartNum, setSearchQuery } from 'store/slices/searchQuerySlice';
 import { setBooks } from 'store/slices/booksSlice';
-import { useBooks } from 'queries/useBooks';
+import { useBooks } from 'hooks/useBooks';
 import { BookPerPage } from 'config/book';
 import { SearchBox } from 'components/base/searchBox';
 import { BookCard } from 'components/book/bookCard';
@@ -37,7 +37,7 @@ const HomePage = () => {
 
   const bookList = useMemo(() => {
     return (
-      <div className='flex flex-wrap justify-center gap-4'>
+      <div className='flex flex-wrap justify-center gap-4' data-testid='book-list'>
         {data?.items?.map((book) => <BookCard key={book.id} book={book} />)}
       </div>
     );

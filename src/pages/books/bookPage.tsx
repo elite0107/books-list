@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowSmallLeftIcon } from '@heroicons/react/24/solid';
 import { Layout } from 'components/layout';
-import { useBook } from 'queries/useBook';
+import { useBook } from 'hooks/useBook';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { setCurrentBook } from 'store/slices/booksSlice';
 
