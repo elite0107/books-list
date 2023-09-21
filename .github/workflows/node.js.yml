@@ -38,6 +38,11 @@ jobs:
     - name: Run the tests
       run: yarn test
 
+    - name: Install SSH Client 🔑
+      uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
+
     - name: Deploy
       run: |
         echo ${github_token}
