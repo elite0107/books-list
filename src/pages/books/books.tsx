@@ -5,7 +5,7 @@ const Books = () => {
 
   console.log(book_id);
 
-  return <div className='w-screen h-screen flex items-center justify-center'>Books Page</div>;
+  return <div className='h-screen flex items-center justify-center'>Books Page</div>;
 };
 
 export default Books;

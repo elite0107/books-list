@@ -5,10 +5,12 @@ import { BooksQuery } from 'types';
 
 const fetchLocations = async (query: string, startNum: number): Promise<BooksQuery> => {
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${
+    `${process.env.REACT_APP_GOOGLE_BOOK_API_BASE_URL}&q=${
       query || 'google'
     }&maxResults=${BookPerPage}&startIndex=${startNum}`,
   );
+
+  if (!response.ok) throw new Error('Network response was not ok');
 
   localStorage.setItem('search-query', query);
   localStorage.setItem('page-start-number', startNum.toString());
@@ -37,6 +39,7 @@ const useBooks = (searchQuery: string, startNum: number) => {
     },
     keepPreviousData: true,
     refetchOnWindowFocus: false,
+    retry: false,
   });
 };
 
