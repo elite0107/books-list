@@ -1,42 +1,18 @@
 import { BrowserRouter } from 'react-router-dom';
-import { screen } from '@testing-library/react';
-import { BookCard } from 'components/book/bookCard';
-import { Book } from 'types';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { renderWithProviders } from '__test__/test-utils';
-import books from '../constants/books.json';
+import HomePage from 'pages/home';
 
-describe('test book card component', () => {
-  it('test render book card component', () => {
-    const book = books.items[0] as Book;
-
-    renderWithProviders(
-      <BrowserRouter>
-        <BookCard book={book} />
-      </BrowserRouter>,
-    );
-
-    expect(screen.getByTestId('thumbnail')).toBeInTheDocument();
-    expect(screen.getByTestId('book-title').innerHTML).toBe(book.volumeInfo.title);
-    expect(screen.getByTestId('book-author').innerHTML).toBe(
-      book.volumeInfo.authors && book.volumeInfo.authors.length > 0
-        ? book.volumeInfo.authors[0]
-        : '',
-    );
-  });
-
-  it('test render book card component with no thumbnail and no author', () => {
-    const book = books.items[0] as Book;
-
-    book.volumeInfo.imageLinks = undefined;
-    book.volumeInfo.authors = [];
+describe('test home page', () => {
+  it('render page', () => {
+    const queryClient = new QueryClient();
 
     renderWithProviders(
-      <BrowserRouter>
-        <BookCard book={book} />
-      </BrowserRouter>,
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <HomePage />
+        </BrowserRouter>
+      </QueryClientProvider>,
     );
-
-    expect(screen.getByTestId('no-thumbnail')).toBeInTheDocument();
-    expect(screen.getByTestId('book-author')).toBeEmptyDOMElement();
   });
 });
