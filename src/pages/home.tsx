@@ -5,9 +5,9 @@ import { setBooks } from 'store/slices/booksSlice';
 import { useBooks } from 'queries/useBooks';
 import { BookPerPage } from 'config/book';
 import { SearchBox } from 'components/base/searchBox';
-import { Layout } from '../components/layout';
 import { BookCard } from 'components/book/bookCard';
 import { Pagination } from 'components/base/pagination';
+import { Layout } from '../components/layout';
 
 const HomePage = () => {
   const { query, pageStartNum } = useAppSelector((state) => state.searchQuery);

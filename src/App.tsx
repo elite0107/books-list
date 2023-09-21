@@ -1,10 +1,10 @@
 import React, { Suspense, lazy, useState } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { store } from './store/store';
-import ColorModeProvider from 'contexts/colorModeProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ColorModeProvider from 'contexts/colorModeProvider';
 import { Container } from 'components/layout/container';
+import { store } from './store/store';
 
 const HomePage = lazy(() => import('./pages/home'));
 const BookPage = lazy(() => import('./pages/books/bookPage'));

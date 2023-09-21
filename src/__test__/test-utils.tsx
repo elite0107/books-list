@@ -5,12 +5,12 @@ import { configureStore } from '@reduxjs/toolkit';
 import type { PreloadedState } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
+import { Book } from 'types';
+import books from './constants/books.json';
 import booksReducer from '../store/slices/booksSlice';
 import searchQueryReducer from '../store/slices/searchQuerySlice';
 
 import type { AppStore, RootState } from '../store/store';
-import books from './constants/books.json';
-import { Book } from 'types';
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   preloadedState?: PreloadedState<RootState>;

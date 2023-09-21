@@ -1,10 +1,10 @@
-import { Layout } from 'components/layout';
-import { useBook } from 'queries/useBook';
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { ArrowSmallLeftIcon } from '@heroicons/react/24/solid';
+import { Layout } from 'components/layout';
+import { useBook } from 'queries/useBook';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { setCurrentBook } from 'store/slices/booksSlice';
-import { ArrowSmallLeftIcon } from '@heroicons/react/24/solid';
 
 const BookPage = () => {
   const { book_id } = useParams();

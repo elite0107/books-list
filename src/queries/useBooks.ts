@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { BookPerPage } from 'config/book';
 import { useEffect, useState } from 'react';
+import { BookPerPage } from 'config/book';
 import { BooksQuery } from 'types';
 
 const fetchBooks = async (query: string, startNum: number): Promise<BooksQuery> => {
