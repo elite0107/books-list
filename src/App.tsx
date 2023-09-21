@@ -2,7 +2,7 @@ import React, { Suspense, lazy, useState } from 'react';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import { ErrorBoundary } from 'react-error-boundary';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ColorModeProvider from 'contexts/colorModeProvider';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Container } from 'components/layout/container';
@@ -39,7 +39,7 @@ function App() {
                       </Suspense>
                     }
                   />
-                  <Route path='*' element={<Navigate to='/' />} />
+                  {/* <Route path='*' element={<Navigate to='/' />} /> */}
                 </Routes>
               </Provider>
             </BrowserRouter>
