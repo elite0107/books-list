@@ -26,8 +26,6 @@ describe('e2e test', () => {
 
     cy.get('html').then((html) => {
       isDark = html.hasClass('dark');
-      expect(html.hasClass('dark')).to.eq(true);
-      expect(isDark).to.eq(true);
     });
 
     cy.get('html').then((html) => expect(html.hasClass('dark')).to.eq(isDark));
