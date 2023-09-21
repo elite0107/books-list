@@ -1,3 +1,5 @@
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
+
 interface PaginationProps {
   startIndex: number;
   count: number;
@@ -25,47 +27,19 @@ export const Pagination = ({ startIndex, count, totalNumber, onPaginate }: Pagin
       <div className='inline-flex mt-2 xs:mt-0'>
         <button
           disabled={startIndex == 0}
-          className='flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 rounded-l hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white disabled:opacity-50'
+          className='flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-blue-700 rounded-l hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 disabled:opacity-50'
           onClick={() => onPaginate && onPaginate(startIndex - count)}
         >
-          <svg
-            className='w-3.5 h-3.5 mr-2'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 14 10'
-          >
-            <path
-              stroke='currentColor'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M13 5H1m0 0 4 4M1 5l4-4'
-            />
-          </svg>
+          <ArrowLeftIcon className='w-3.5 h-3.5 mr-2' />
           Prev
         </button>
         <button
           disabled={startIndex + count >= totalNumber}
-          className='flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 border-0 border-l border-gray-700 rounded-r hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white disabled:opacity-50'
+          className='flex items-center justify-center px-4 h-10 text-base border-l border-blue-300 font-medium text-white bg-blue-700 rounded-r hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 disabled:opacity-50'
           onClick={() => onPaginate && onPaginate(startIndex + count)}
         >
           Next
-          <svg
-            className='w-3.5 h-3.5 ml-2'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 14 10'
-          >
-            <path
-              stroke='currentColor'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M1 5h12m0 0L9 1m4 4L9 9'
-            />
-          </svg>
+          <ArrowRightIcon className='w-3.5 h-3.5 ml-2' />
         </button>
       </div>
     </div>
