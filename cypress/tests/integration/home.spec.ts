@@ -18,14 +18,14 @@ describe('Homepage test', () => {
 
     cy.getBySel('pagination-numbers')
       .find('span')
-      .should((spans) => {
+      .then((spans) => {
         expect(spans).to.have.length(3);
 
         start = parseInt(spans[0].innerHTML);
         end = parseInt(spans[1].innerHTML);
       });
 
-    cy.getBySel('book-list').should((bookList) => {
+    cy.getBySel('book-list').then((bookList) => {
       expect(bookList.children()).to.have.length(end - start + 1);
     });
 
@@ -39,7 +39,7 @@ describe('Homepage test', () => {
 
     cy.getBySel('pagination-numbers')
       .find('span')
-      .should((spans) => {
+      .then((spans) => {
         expect(spans).to.have.length(3);
 
         start = parseInt(spans[0].innerHTML);
@@ -52,7 +52,7 @@ describe('Homepage test', () => {
 
     cy.getBySel('pagination-numbers')
       .find('span')
-      .should((spans) => {
+      .then((spans) => {
         expect(spans).to.have.length(3);
 
         expect(parseInt(spans[0].innerHTML)).to.equal(start + BOOKS_PER_PAGE);
