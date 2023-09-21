@@ -39,6 +39,9 @@ jobs:
       - name: Run the tests
         run: yarn test
 
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+
       - name: Create SSH Key
         run: |
           which ssh-agent || (sudo apk update && sudo apk add openssh-client)
