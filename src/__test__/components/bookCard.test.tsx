@@ -1,4 +1,3 @@
-import { screen } from '@testing-library/react';
 import { BookCard } from 'components/book/bookCard';
 import books from '../constants/books.json';
 import { Book } from 'types';
