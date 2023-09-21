@@ -10,5 +10,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'http://localhost:3000/books-list',
+    specPattern: 'cypress/tests/**/*.spec.{js,jsx,ts,tsx}',
   },
 });
