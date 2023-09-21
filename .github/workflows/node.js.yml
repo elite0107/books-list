@@ -40,19 +40,21 @@ jobs:
 
     - name: Create SSH Key
       run: |
-        echo "$SSH_PRIVATE_KEY" > private.key
-        echo "Deploy private key $SSH_PRIVATE_KEY"
-        sudo chmod 400 private.key
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        which ssh-agent || (sudo apk update && sudo apk add openssh-client)
+        which rsync || (sudo apk update && sudo apk add rsync)
+        mkdir -p ~/.ssh
+        chmod 700 ~/.ssh
+        touch ~/.ssh/private.key
+        chmod 600 ~/.ssh/private.key
+        echo -e "${{ secrets.SSH_DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/private.key
 
     - name: Deploy
       run: |
         eval $(ssh-agent -s)
-        ssh-add private.key
+        ssh-add ~/.ssh/private.key
         git config --global user.name $user_name
         git config --global user.email $user_email
-        git remote set-url origin git@github.com:${user_name}/${repository}.git
+        git remote set-url origin git@github.com:${repository}.git
         yarn deploy
       env:
         user_name: 'elite0107'
