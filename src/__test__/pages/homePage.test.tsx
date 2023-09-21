@@ -2,11 +2,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { act } from 'react-dom/test-utils';
+import { DEBOUNCING_TIME, BOOKS_PER_PAGE } from 'config';
 import { renderWithProviders } from '__test__/test-utils';
 import HomePage from 'pages/home';
 import fetchBooks from 'queries/fetchBooks';
 import { BooksQuery } from 'types';
-import { DEBOUNCING_TIME } from 'config/global';
+
 import books from '../constants/books.json';
 
 const mockFetchBooks = fetchBooks as jest.Mock<ReturnType<typeof fetchBooks>>;
@@ -41,7 +42,9 @@ describe('test home page', () => {
     );
 
     await waitFor(() => {
-      expect(screen.getByTestId('book-list')).toBeInTheDocument();
+      const bookList = screen.getByTestId('book-list');
+      expect(bookList).toBeInTheDocument();
+      expect(bookList.children.length).toBe(BOOKS_PER_PAGE);
     });
   });
 

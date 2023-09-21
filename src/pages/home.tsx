@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { setPageStartNum, setSearchQuery } from 'store/slices/searchQuerySlice';
 import { setBooks } from 'store/slices/booksSlice';
 import { useBooks } from 'hooks/useBooks';
-import { BookPerPage } from 'config/book';
+import { BOOKS_PER_PAGE } from 'config';
 import { SearchBox } from 'components/base/searchBox';
 import { BookCard } from 'components/book/bookCard';
 import { Pagination } from 'components/base/pagination';
@@ -48,7 +48,7 @@ const HomePage = () => {
       <SearchBox value={query} setValue={setSearchQueryCallback} />
       <Pagination
         startIndex={pageStartNum}
-        count={BookPerPage}
+        count={BOOKS_PER_PAGE}
         totalNumber={data?.totalItems ?? 0}
         onPaginate={onPaginate}
       />

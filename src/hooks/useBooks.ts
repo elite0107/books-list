@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import fetchBooks from 'queries/fetchBooks';
-import { DEBOUNCING_TIME } from 'config/global';
+import { DEBOUNCING_TIME } from 'config';
 
 // Hooks
 
