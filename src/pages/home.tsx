@@ -1,22 +1,36 @@
+import { useCallback, useEffect, useMemo } from 'react';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { setPageStartNum, setSearchQuery } from 'store/slices/searchQuerySlice';
+import { setBooks } from 'store/slices/booksSlice';
+import { useBooks } from 'queries/useBooks';
+import { BookPerPage } from 'config/book';
 import { SearchBox } from 'components/base/searchBox';
 import { Layout } from '../components/layout';
-import { useCallback, useMemo } from 'react';
-import { useBooks } from 'queries/useBooks';
 import { BookCard } from 'components/book/bookCard';
 import { Pagination } from 'components/base/pagination';
-import { BookPerPage } from 'config/book';
 
 const HomePage = () => {
   const { query, pageStartNum } = useAppSelector((state) => state.searchQuery);
   const dispatch = useAppDispatch();
   const { data, isLoading, isError, isPreviousData } = useBooks(query, pageStartNum);
 
+  useEffect(() => {
+    if (data && data.items && !isPreviousData && !isError) {
+      dispatch(setBooks(data?.items));
+    }
+  }, [dispatch, data, isError, isPreviousData]);
+
   const setSearchQueryCallback = useCallback(
     (query: string) => {
       dispatch(setSearchQuery(query));
       dispatch(setPageStartNum(0));
+    },
+    [dispatch],
+  );
+
+  const onPaginate = useCallback(
+    (start: number) => {
+      dispatch(setPageStartNum(start));
     },
     [dispatch],
   );
@@ -28,13 +42,6 @@ const HomePage = () => {
       </div>
     );
   }, [data]);
-
-  const onPaginate = useCallback(
-    (start: number) => {
-      dispatch(setPageStartNum(start));
-    },
-    [dispatch],
-  );
 
   return (
     <div className='flex flex-col p-4 items-center gap-8'>

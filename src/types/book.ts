@@ -15,6 +15,7 @@ export interface Book {
 
 export interface BooksState {
   books: Book[];
+  currentBook?: Book;
 }
 
 export interface BooksQuery {

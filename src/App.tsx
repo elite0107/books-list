@@ -8,7 +8,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Container } from 'components/layout/container';
 
 const HomePage = lazy(() => import('./pages/home'));
-const BooksPage = lazy(() => import('./pages/books/books'));
+const BookPage = lazy(() => import('./pages/books/bookPage'));
 
 const Loading = lazy(() => import('./pages/loading/loading'));
 const PageError = lazy(() => import('./pages/error/500'));
@@ -35,7 +35,7 @@ function App() {
                     path='/books/:book_id'
                     element={
                       <Suspense fallback={<Loading />}>
-                        <BooksPage />
+                        <BookPage />
                       </Suspense>
                     }
                   />
