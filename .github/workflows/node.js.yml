@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ['master']
   pull_request:
-    branches: [ "master" ]
+    branches: ['master']
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,45 +19,47 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Build
-      run: |
-        yarn
-        yarn build
-      env:
-        REACT_APP_GOOGLE_BOOK_API_BASE_URL: ${{ secrets.REACT_APP_GOOGLE_BOOK_API_BASE_URL }}
-        REACT_APP_USER_KEY: ${{ secrets.REACT_APP_USER_KEY }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
 
-    - name: Run the tests
-      run: yarn test
+      - name: Build
+        run: |
+          yarn
+          yarn build
+        env:
+          REACT_APP_GOOGLE_BOOK_API_BASE_URL: ${{ secrets.REACT_APP_GOOGLE_BOOK_API_BASE_URL }}
+          REACT_APP_USER_KEY: ${{ secrets.REACT_APP_USER_KEY }}
 
-    - name: Create SSH Key
-      run: |
-        which ssh-agent || (sudo apk update && sudo apk add openssh-client)
-        which rsync || (sudo apk update && sudo apk add rsync)
-        mkdir -p ~/.ssh
-        chmod 700 ~/.ssh
-        touch ~/.ssh/private.key
-        chmod 600 ~/.ssh/private.key
-        echo -e "${{ secrets.SSH_DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/private.key
+      - name: Run the tests
+        run: yarn test
 
-    - name: Deploy
-      run: |
-        eval $(ssh-agent -s)
-        ssh-add ~/.ssh/private.key
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin git@github.com:${repository}.git
-        yarn deploy
-      env:
-        user_name: 'elite0107'
-        user_email: 'toptalent0107@gmail.com'
-        repository: ${{ github.repository }}
+      - name: Create SSH Key
+        run: |
+          which ssh-agent || (sudo apk update && sudo apk add openssh-client)
+          which rsync || (sudo apk update && sudo apk add rsync)
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          touch ~/.ssh/private.key
+          chmod 600 ~/.ssh/private.key
+          echo -e "${{ secrets.SSH_DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/private.key
+
+      - name: Deploy
+        run: |
+          eval $(ssh-agent -s)
+          ssh-add ~/.ssh/private.key
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin git@github.com:${repository}.git
+          yarn deploy
+        env:
+          user_name: 'elite0107'
+          user_email: 'toptalent0107@gmail.com'
+          repository: ${{ github.repository }}
+          REACT_APP_GOOGLE_BOOK_API_BASE_URL: ${{ secrets.REACT_APP_GOOGLE_BOOK_API_BASE_URL }}
+          REACT_APP_USER_KEY: ${{ secrets.REACT_APP_USER_KEY }}
