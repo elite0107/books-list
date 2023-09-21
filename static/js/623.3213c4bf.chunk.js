@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksonra_book=self.webpackChunksonra_book||[]).push([[623],{4976:function(e,t,n){n.d(t,{S:function(){return r}});var a=n(184),r=function(){return(0,a.jsx)("div",{className:"bg-white dark:bg-gray-900 text-black dark:text-white pt-48 h-screen mx-auto",children:"Something went wrong. Please try again after a few minutes"})}},1623:function(e,t,n){n.r(t);var a=n(4976);t.default=a.S}}]);
+//# sourceMappingURL=623.3213c4bf.chunk.js.map
