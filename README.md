@@ -39,17 +39,12 @@
 ## About The Project
 
 <p align="center">
-  <img src=".github/images/fs-white.jpg" width="72%" /> 
+  <img src=".github/images/fs-white.jpg" width="53%" /> 
+  <img src=".github/images/mb-dark.jpg" width="19%" /> 
 </p>
-<div style="display: flex; gap: 6%; width: 72%; margin-left: 14%; margin-bottom: 4%">
-  <img src=".github/images/mb-dark.jpg" width="50%" />
-  <div style="width: 50%; display: flex; flex-direction: column; gap: 10%">
-    <img src=".github/images/fs-detail-white.jpg"  />
-    <img src=".github/images/fs-detail-dark.jpg"  />
-  </div>
-</div>
 <p align="center">
-  <img src=".github/images/fs-dark.jpg" width="72%" /> 
+  <img src=".github/images/fs-detail-dark.jpg" width="35%" style="margin:1%;"  />
+  <img src=".github/images/fs-detail-white.jpg" width="35%" style="margin:1%;" />
 </p>
 
 This application allows users to search and show details of the books from Google Book API.
