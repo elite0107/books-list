@@ -1,46 +1,168 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h1 align="center">Google Book List</h1>
+  <p align="center">
+    A React, Redux, and TypeScript application that allows users to search for and display details of books using Google Book API.
+    <br />
+    <a href="https://elite0107.github.io/books-list"><strong>Go to the home page »</strong></a>
+    <br />
+  </p>
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <img src=".github/images/fs-white.jpg" width="72%" /> 
+</p>
+<div style="display: flex; gap: 6%; width: 72%; margin-left: 14%; margin-bottom: 4%">
+  <img src=".github/images/mb-dark.jpg" width="50%" />
+  <div style="width: 50%; display: flex; flex-direction: column; gap: 10%">
+    <img src=".github/images/fs-detail-white.jpg"  />
+    <img src=".github/images/fs-detail-dark.jpg"  />
+  </div>
+</div>
+<p align="center">
+  <img src=".github/images/fs-dark.jpg" width="72%" /> 
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This application allows users to search and show details of the books from Google Book API.
 
-### `npm test`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
+- ![React][React.js]
+- ![Redux][Redux.js]
+- ![TypeScript][TypeScript]
+- ![Tailwind][Tailwind]
+- ![Jest][Jest]
+- ![Cypress][Cypress]
+- ![GitHubActions][GitHubActions]
+- ![GitHubPages][GitHubPages]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GETTING STARTED -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Deployed website:
+[https://elite0107.github.io/books-list](https://elite0107.github.io/books-list)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Get a free Google Book API Key from your Google account.
+2. Clone the repo
+   ```sh
+   git clone https://github.com/elite0107/books-list.git
+   ```
+3. Install NPM packages
+   ```sh
+   yarn
+   ```
+4. Enter your API in `.env.local`
+   ```sh
+   REACT_APP_USER_KEY=YOUR_GOOGLE_BOOK_API_KEY
+   ```
+5. Build the website
+   ```sh
+   yarn build
+   ```
+6. Test the website
+   ```sh
+   yarn test
+   ```
+7. Deploy the website
+   ```sh
+   yarn deploy
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- USAGE EXAMPLES -->
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Users can search and display books from `Google Books API`.
+I implemented debouncing of the search results to avoid ovarloading the API.<br/>
+Used `local storage` to save `color mode (dark|light)`, `user search query`, and `start number of pagination`. So when the user revisits the application, these settings are restored then users can show the last search results.
+<br/>
+Built responsive designs that are compotable for desktop and mobile views and theme switching feature. At first time, the application collects the user's device's color mode and set the application's color mode.
+<br/>
+Implemented some simple `unit`, `integration`, and `e2e` testings by `Jest` and `Cypress`. Mocked `Redux` and `Web Requests` to test the pages and components. Used `advanced timer` to test debouncing.
+<br/>
+Utilized `Github actions` and `Github pages` to implement `CI/CD` pipeline.
+So when developers push codes or make a pull request to `master` branch, `Github actions` run automatically to test the code and deploy the build results to `Github pages`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [x] Search books
+- [x] Debouncing search feature
+- [x] Every search result has title and cover image
+- [x] Navigate to the book detail page by clicking `ReadMore` button
+- [x] Display detailed information of a book
+- [x] Use Redux for state management
+- [x] Keep search queries and pagination values in the Redux store
+- [x] Handle loading, error, and success status
+- [x] Build responsive designs that work on both desktop and mobile views
+- [x] Use TailwindCSS to build UI components
+- [x] Implement pagination for the search results
+- [x] Save user's last search and pagination in local storage to save and restore history
+- [x] Implement unit, integration and e2e testing by Jest and Cypress
+- [x] Build CI/CD pipeline by github actions and github pages
+- [x] Deploy the website to [https://elite0107.github.io/books-list](https://elite0107.github.io/books-list)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+elite0107 - toptalent0107@gmail.com
+
+Project Link: [https://github.com/elite0107/books-list](https://github.com/elite0107/books-list)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Redux.js]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
+[TypeScript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Jest]: https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white
+[Cypress]: https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white
+[GitHubActions]: https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white
+[GitHubPages]: https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white
